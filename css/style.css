@@ -1,0 +1,174 @@
+
+:root {
+    --color-texto: rgb(0, 0, 0);
+    --color-fondo: white; 
+    --color-boton: darkcyan;
+    --color-otros: darkgrey;
+}
+
+body {
+    background-color: bisque;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+body>header h1 { font-size: 1.25rem;}
+section h1 {font-size: 5rem;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:400;
+}
+
+body>header, body>nav {
+    color: var(--color-fondo);
+}
+
+section header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:var(--color-fondo);
+    position: relative;
+    font-weight: 900;
+}
+
+section#home header {
+    background-image: url(../assets/codigo.jpg);
+}
+section#about header{
+    background-size: cover;
+    height: 50vh;
+    background-image: url(../assets/foto.jpg);
+}
+section#contact header{
+    height: 30vh;
+    background-image: url(../assets/telefono.PNG);
+}
+
+section .title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30em;
+}
+
+section header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:black;
+    opacity: 0.2;
+}
+
+section .content-wrapper, nav.content-wrapper {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: justify;
+    font-weight: 600;
+}
+/* Botones*/
+
+section .boton-wrapper {
+    margin: 1rem;
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+section .boton {
+    display: block;
+    color: var(--color-fondo);
+    background-color: rgb(156, 104, 80);;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Section HOME (POSTS) */
+
+section#home header h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    animation: titulo 3s linear;
+    animation-fill-mode: forwards;
+}
+
+section#home {
+    /* padding-bottom: 1rem; */
+    border-bottom: 1px solid var(--color-otros)
+}
+
+section#home p{
+    font-size: 1.50rem;
+    margin-top: 1rem;
+}
+
+/* Section ABOUT*/
+
+section#about p {
+    line-height: 1.5;
+    margin: 1.8rem 0; 
+}
+
+/* Section CONTACT */
+
+section#contact p {
+    line-height: 1.5;
+    margin: 1.8rem 0; 
+}
+
+section#contact ul {
+    margin-bottom: 1rem;
+}
+
+section#contact li {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-otros);
+    
+}
+
+section#contact li.form-group label {
+    display: none;
+}
+
+section#contact li.form-group input, 
+section#contact li.form-group textarea {
+    width: 100%;
+    border: 0px solid;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  var(--color-otros);
+}
+
+body>footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-otros);
+    padding-top: 3rem;
+    text-align: center;
+}
+
+body>footer nav {
+    font-size: .8rem;
+}
+
+body>footer small {
+    color: var(--color-otros);
+}
+
+.validaCorrecta{
+    border: 1px solid red !important;
+}

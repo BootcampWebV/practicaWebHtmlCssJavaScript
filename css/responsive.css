@@ -1,0 +1,86 @@
+@media screen and (min-width: 900px) {
+
+    nav.menu-top {
+        z-index: 1;
+        right: 15%;
+        top: 1rem;
+        font-weight: 800;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        display: block;
+        position: fixed;
+        background-color: var(--color-otros);
+    }
+
+    nav.menu-top li, footer nav li {
+        display: inline-flex;
+        z-index: 1;
+    }
+
+    nav a {
+        display: block;
+        padding: .5rem 1rem;
+        z-index: 1;
+    }
+    
+    body>nav a:hover {
+        background-color:rgb(156, 104, 80);
+        transform: scale(1);
+        z-index: 1;
+      }
+
+    section .content-wrapper, nav.content-wrapper {
+        width: 75%;
+        max-width: 40rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    nav.menu-top {
+        z-index: 1;
+        left: 1%;
+        top: 1rem;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        display: block;
+        position: fixed;
+        background-color: var(--color-otros);
+    }
+
+    nav.menu-top li, footer nav li {
+        display: inline;
+        z-index: 1;
+    }
+
+    nav a {
+        display: block;
+        padding: .1rem 1rem;
+        z-index: 1;
+    }
+    
+    body>nav a:hover {
+        background-color:rgb(156, 104, 80);
+        transform: scale(1);
+        z-index: 1;
+      }
+
+    section .content-wrapper, nav.content-wrapper {
+        width: 75%;
+        max-width: 40rem;
+        margin-top: 2rem;
+    }
+    section h1 {
+    font-size: 3.5rem;
+    }
+
+    section#home header h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+        animation: titulo 3s linear;
+        animation-fill-mode: forwards;
+    }
+}

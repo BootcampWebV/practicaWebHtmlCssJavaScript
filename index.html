@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Rodríguez">
+    <meta name="description" content="Curriculum Santiago">
+    <title>Clean Blog</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="./js/app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav id="top-menu" class="menu-top">
+        <ul>
+            <li>
+                <a href="./index.html#home">Home</a>
+            </li>
+            <li>
+                <a href="./index.html#about">Quien soy</a>
+            </li>
+            <li>
+                <a href="./index.html#contact">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <header>
+            <div class="title-wrapper">
+                <h1>Santiago Rodríguez Sánchez</h1>
+                    <p>"Bien, Java podría ser un buen ejemplo de lo que un lenguaje de programación debería ser. Pero las aplicaciones Java son buenos ejemplos de lo que las aplicaciones no deberían ser"</p>
+                        <footer>
+                            <cite>pixadel</cite>
+                        </footer>
+            </div>
+        </header>
+    </section>
+    <section id="about">
+        <header>
+            <div class="title-wrapper">
+                <h1>Quien soy</h1>
+                <p>Developer in progress</p>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <p>Llevo varios años desarrollando software, hice el ciclo formativo de grado superior (DAI), y despues..</p>
+            <p>Acabe en cobol durante unos cuantos años :( , despues de un recision no voluntaria ;) ,decidi cambiar a algo mas
+                moderno y salte a java (Al vacio!). 
+            </p>
+            <p>Hice un curso online de java y tire como pude desarrollando java.</p>
+            <p>Actualmente he empezado un bootcamp web, a ver si consigo de una vez aprender bien algo.</p>
+            <p>Basicamente Actualmente me considero un survival, no more!!.</p>
+
+        </div>
+    </section>
+    <section id="contact">
+        <header>
+            <div class="title-wrapper">
+                <h1>Contacto</h1>
+                <p>Por favor contacta para recibir mas información</p>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <p>Rellena el formulario y contactare lo antes posible!</p>
+            <form action="" id="contact">
+                <ul>
+                    <li class="form-group">
+                        <legend>Nombre:</legend>
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    </li>
+                    <li class="form-group">
+                        <legend>Dirección de Email:</legend>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    </li>
+                    <li>
+                    <label for="selection">Selecciona como nos has conocido:</label>
+                        <select name="selection" id="selection">
+                            <option value="1"></option>
+                            <option value="2">Via Google</option>
+                            <option value="3">Via Lista de Correo</option>
+                            <option value="4">Otros</option>
+                        </select>
+                    </li>
+                    <li class="form-group">
+                        <legend>Numero de Contacto:</legend>
+                        <input type="tel" name="phone" id="phone" placeholder="666808080">
+                    </li>
+                    <li class="form-group">
+                        <legend>Comentario:</legend>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Texto"></textarea>
+                    </li>
+                </ul>
+                <button class="boton" type="submit" id="send">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p><small>Santiago Rodríguez Sánchez</small></p>
+    </footer>
+</body>
+</html>
